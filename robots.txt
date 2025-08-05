@@ -1,0 +1,25 @@
+# robots.txt for XAK.info
+# Allow all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /js/airtable-integration.js
+Disallow: *.pdf
+Disallow: /temp/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://xak.info/sitemap.xml
+
+# Crawl delay for responsible crawling
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
