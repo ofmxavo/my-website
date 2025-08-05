@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free business lessons from real experience. Learn from someone who built $100K/month in 6 months.">
+    <meta name="keywords" content="business lessons, startup advice, entrepreneurship, business mistakes, marketing strategies">
+    <title>Business Lessons for Beginners - XAK</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/beginners.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg viewBox="0 0 200 50" class="logo-main">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--primary-red);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--dark-red);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Icon - Chart/Growth Symbol -->
+                    <g transform="translate(10, 10)">
+                        <!-- Background circle -->
+                        <circle cx="15" cy="15" r="15" fill="url(#logoGrad)"/>
+                        <!-- Chart bars -->
+                        <rect x="8" y="18" width="3" height="7" fill="white" rx="1"/>
+                        <rect x="13" y="14" width="3" height="11" fill="white" rx="1"/>
+                        <rect x="18" y="10" width="3" height="15" fill="white" rx="1"/>
+                        <!-- Growth arrow -->
+                        <path d="M7,12 L22,12 L22,8 L23,8 L20,5 L17,8 L18,8 L18,12" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                    </g>
+                    <!-- Text -->
+                    <text x="50" y="32" font-family="Inter" font-size="32" font-weight="800" fill="var(--black)">XAK</text>
+                    <text x="120" y="32" font-family="Inter" font-size="20" font-weight="400" fill="var(--gray)">.info</text>
+                </svg>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="beginners.html" class="nav-link active">Lessons</a></li>
+                <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#newsletter" class="btn btn-primary btn-small">Get Free Video</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="beginners-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">3 Years of Business Failures<br>Condensed Into One Page</h1>
+                    <p class="hero-subtitle">I lost $100K+ making these mistakes so you don't have to. Every lesson here is from real experience - no theory, no BS.</p>
+                    <div class="lesson-stats">
+                        <div class="stat">
+                            <span class="stat-number">52</span>
+                            <span class="stat-label">Hard-Learned Lessons</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$100K+</span>
+                            <span class="stat-label">In Costly Mistakes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3 Years</span>
+                            <span class="stat-label">Of Real Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Animated Background -->
+                <div class="hero-animation">
+                    <svg viewBox="0 0 800 400" class="lesson-chart">
+                        <path d="M0,350 L100,300 L200,320 L300,250 L400,280 L500,200 L600,150 L700,100 L800,50" 
+                              stroke="var(--primary-red)" stroke-width="3" fill="none" opacity="0.5">
+                            <animate attributeName="stroke-dasharray" values="0,1600;1600,0" dur="5s" repeatCount="indefinite"/>
+                        </path>
+                        <circle r="5" fill="var(--primary-red)">
+                            <animateMotion dur="5s" repeatCount="indefinite">
+                                <mpath href="#growth-path"/>
+                            </animateMotion>
+                        </circle>
+                        <path id="growth-path" d="M0,350 L100,300 L200,320 L300,250 L400,280 L500,200 L600,150 L700,100 L800,50" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="lesson-nav">
+            <div class="container">
+                <div class="nav-grid">
+                    <a href="#marketing" class="nav-card">
+                        <div class="nav-icon">📈</div>
+                        <h3>Marketing & Sales</h3>
+                        <p>The lifeblood of any business</p>
+                    </a>
+                    <a href="#systems" class="nav-card">
+                        <div class="nav-icon">⚙️</div>
+                        <h3>Systems & Automation</h3>
+                        <p>Work smarter, not harder</p>
+                    </a>
+                    <a href="#employees" class="nav-card">
+                        <div class="nav-icon">👥</div>
+                        <h3>Employee Management</h3>
+                        <p>Building winning teams</p>
+                    </a>
+                    <a href="#mindset" class="nav-card">
+                        <div class="nav-icon">🧠</div>
+                        <h3>Mindset & Discipline</h3>
+                        <p>The real competitive edge</p>
+                    </a>
+                    <a href="#financial" class="nav-card">
+                        <div class="nav-icon">💰</div>
+                        <h3>Financial Strategy</h3>
+                        <p>Money management that works</p>
+                    </a>
+                    <a href="#founder" class="nav-card">
+                        <div class="nav-icon">🤝</div>
+                        <h3>Founder Dynamics</h3>
+                        <p>Partnership success secrets</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing & Sales Lessons -->
+        <section id="marketing" class="lesson-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Marketing & Sales Lessons</h2>
+                    <p class="section-lead">Without marketing, you have no business. Period.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🎯</text>
+                            </svg>
+                        </div>
+                        <h3>Marketing First, Everything Else Second</h3>
+                        <p>You can have great marketing and poor product delivery, and still make money. But with poor marketing and the best product? You'll make nothing. I spent 2 months on a website nobody saw - don't be me.</p>
+                        <div class="lesson-tag">Critical</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <rect x="20" y="20" width="60" height="60" rx="10" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="20s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">💯</text>
+                            </svg>
+                        </div>
+                        <h3>The 100% Close Rate Trap</h3>
+                        <p>If you're closing 100% of sales calls, you're charging too little. Ideal close rate? 35-40%. Test higher prices until people start saying no - that's where the real money is.</p>
+                        <div class="lesson-tag">Revenue</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <path d="M20,80 L40,60 L60,70 L80,40" stroke="var(--primary-red)" stroke-width="3" fill="none">
+                                    <animate attributeName="stroke-dasharray" values="0,200;200,0" dur="3s" repeatCount="indefinite"/>
+                                </path>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">📊</text>
+                            </svg>
+                        </div>
+                        <h3>The $100K Data Mistake</h3>
+                        <p>I lost $100,000 making decisions based on feelings instead of data. Track everything: sales calls, CTAs, show-up rates. Airtable ($24/month) is Google Sheets on steroids - worth every penny.</p>
+                        <div class="lesson-tag">Systems</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <circle cx="30" cy="50" r="20" fill="var(--primary-red)" opacity="0.3">
+                                    <animate attributeName="r" values="20;25;20" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="70" cy="50" r="20" fill="var(--primary-red)" opacity="0.3">
+                                    <animate attributeName="r" values="20;25;20" dur="2s" begin="1s" repeatCount="indefinite"/>
+                                </circle>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🎨</text>
+                            </svg>
+                        </div>
+                        <h3>Copy What Works</h3>
+                        <p>Find what your successful competitors are doing and recreate it. TikTok succeeded, then Instagram made Reels, YouTube made Shorts. Follow proven trends, don't try to reinvent the wheel.</p>
+                        <div class="lesson-tag">Strategy</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <polygon points="50,20 70,40 70,70 50,80 30,70 30,40" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="2s" repeatCount="indefinite"/>
+                                </polygon>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">💸</text>
+                            </svg>
+                        </div>
+                        <h3>Know Your Customer LTV</h3>
+                        <p>If a customer's lifetime value is $7 and you keep 50%, you can spend $1.50-$2 to acquire them. Don't panic if ads lose money initially - they get cheaper with more data. But don't waste $500 on a dead campaign either.</p>
+                        <div class="lesson-tag">Metrics</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Systems & Automation Lessons -->
+        <section id="systems" class="lesson-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Systems & Automation</h2>
+                    <p class="section-lead">Systems separate the businesses that scale from those that fail.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <g stroke="var(--primary-red)" stroke-width="2" fill="none">
+                                    <circle cx="50" cy="30" r="10"/>
+                                    <circle cx="30" cy="60" r="10"/>
+                                    <circle cx="70" cy="60" r="10"/>
+                                    <line x1="50" y1="40" x2="30" y2="50"/>
+                                    <line x1="50" y1="40" x2="70" y2="50"/>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🔧</text>
+                            </svg>
+                        </div>
+                        <h3>The Solopreneur Scaling Formula</h3>
+                        <p>1) Do everything yourself first. 2) Hire employees to do what you were doing. 3) Use your free time to build systems that eliminate what employees do. This lets you hire cheaper or get more done with the same people.</p>
+                        <div class="lesson-tag">Growth</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <rect x="25" y="25" width="50" height="50" rx="5" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">📋</text>
+                            </svg>
+                        </div>
+                        <h3>Track or Die</h3>
+                        <p>Lack of systems killed my previous ventures. No organization = communication problems = death. Track everything, automate what you can, and document every process. Chaos doesn't scale.</p>
+                        <div class="lesson-tag">Critical</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <path d="M30,50 Q50,30 70,50 T110,50" stroke="var(--primary-red)" stroke-width="2" fill="none">
+                                    <animate attributeName="d" values="M30,50 Q50,30 70,50 T110,50;M30,50 Q50,70 70,50 T110,50;M30,50 Q50,30 70,50 T110,50" dur="3s" repeatCount="indefinite"/>
+                                </path>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🚀</text>
+                            </svg>
+                        </div>
+                        <h3>The Business Cycle Blueprint</h3>
+                        <p>1) Find marketing that works. 2) Perfect your service/product. 3) Maximize revenue from existing clients. 4) Build systems (automate delivery, onboarding, communication). 5) Scale up. Most people do this backwards.</p>
+                        <div class="lesson-tag">Framework</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employee Management Lessons -->
+        <section id="employees" class="lesson-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Employee Management</h2>
+                    <p class="section-lead">The harsh truths nobody wants to tell you about managing people.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <g>
+                                    <circle cx="50" cy="30" r="15" fill="var(--primary-red)" opacity="0.3"/>
+                                    <rect x="35" y="45" width="30" height="35" rx="5" fill="var(--primary-red)" opacity="0.3"/>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">💼</text>
+                            </svg>
+                        </div>
+                        <h3>The Cruel Truth About Salaries</h3>
+                        <p>Business is about lowest costs for highest output. If someone will do the job for $3/hour instead of $5/hour with same quality, you have to make the hard choice. Remove emotion from these decisions.</p>
+                        <div class="lesson-tag">Reality</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <rect x="20" y="30" width="60" height="40" rx="5" fill="none" stroke="var(--primary-red)" stroke-width="2"/>
+                                <line x1="30" y1="45" x2="70" y2="45" stroke="var(--primary-red)" stroke-width="2">
+                                    <animate attributeName="x2" values="70;50;70" dur="2s" repeatCount="indefinite"/>
+                                </line>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">📈</text>
+                            </svg>
+                        </div>
+                        <h3>When to Give Raises</h3>
+                        <p>Ask: Is this employee replaceable for the same output? If yes, no raise 4/5 times. If Henry sells the same as new hires Mary, Cooper, and Carlos after a year, he's replaceable. Only loyalty and reliability might justify it.</p>
+                        <div class="lesson-tag">Decisions</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <g stroke="var(--primary-red)" stroke-width="2" fill="none">
+                                    <path d="M30,70 L30,40 L50,30 L70,40 L70,70">
+                                        <animate attributeName="stroke-dasharray" values="0,200;200,0" dur="3s" repeatCount="indefinite"/>
+                                    </path>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🎮</text>
+                            </svg>
+                        </div>
+                        <h3>Gamify for Performance</h3>
+                        <p>Standard salary + commission = lazy employees. I use 3 bonus systems: 1) Daily performance ladder 2) Consistency bonus (hit 70% of targets) 3) Team performance bonus. Margins stay similar but revenue explodes.</p>
+                        <div class="lesson-tag">Innovation</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <circle cx="50" cy="50" r="30" fill="none" stroke="var(--primary-red)" stroke-width="2" stroke-dasharray="5,5">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite"/>
+                                </circle>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">❓</text>
+                            </svg>
+                        </div>
+                        <h3>The Employee Mistake Framework</h3>
+                        <p>Before firing, ask: Did they know about the task? Did they have resources? Was there a misunderstanding? Was the deadline clear? Most "bad employees" are actually management failures.</p>
+                        <div class="lesson-tag">Framework</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mindset & Discipline Lessons -->
+        <section id="mindset" class="lesson-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mindset & Discipline</h2>
+                    <p class="section-lead">The difference between those who make it and those who don't.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-card featured">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <path d="M50,20 L60,40 L80,40 L65,55 L75,75 L50,60 L25,75 L35,55 L20,40 L40,40 Z" fill="var(--primary-red)" opacity="0.3">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="20s" repeatCount="indefinite"/>
+                                </path>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">⚡</text>
+                            </svg>
+                        </div>
+                        <h3>Nothing Gets Easier, You Get Stronger</h3>
+                        <p>My mentor Anyro told me this and it changed everything. The problems at $100K/month aren't easier than at $10K/month - they're different. You just become capable of handling more.</p>
+                        <div class="lesson-tag">Wisdom</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <rect x="30" y="30" width="40" height="40" rx="5" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animate attributeName="stroke-width" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🔄</text>
+                            </svg>
+                        </div>
+                        <h3>Consistency Is Everything</h3>
+                        <p>The competition succeeding is working every single day. I've been inconsistent and paid for it. Show up daily trying to make 1 thing better - do this for years and you literally cannot fail.</p>
+                        <div class="lesson-tag">Fundamental</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <g>
+                                    <line x1="20" y1="50" x2="80" y2="50" stroke="var(--primary-red)" stroke-width="2"/>
+                                    <circle cx="50" cy="50" r="5" fill="var(--primary-red)">
+                                        <animate attributeName="cx" values="20;80;20" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🐌</text>
+                            </svg>
+                        </div>
+                        <h3>Slow Motion > No Motion</h3>
+                        <p>Some days I don't feel like working. I'm not Iron Man. But sitting at your computer trying is better than not. On your worst days, do the easy tasks: fix a bug, send an email, research competitors.</p>
+                        <div class="lesson-tag">Daily</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <circle cx="50" cy="50" r="35" fill="none" stroke="var(--primary-red)" stroke-width="3" stroke-dasharray="220" stroke-dashoffset="220">
+                                    <animate attributeName="stroke-dashoffset" values="220;0" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">✅</text>
+                            </svg>
+                        </div>
+                        <h3>Redefine Success Daily</h3>
+                        <p>Stop measuring success by money made today. Write what needs to get done, do it all = successful day. This removes emotion and focuses on progress, not results. Changed my life.</p>
+                        <div class="lesson-tag">Mindset</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <path d="M25,75 Q50,25 75,75" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animate attributeName="d" values="M25,75 Q50,25 75,75;M25,75 Q50,50 75,75;M25,75 Q50,25 75,75" dur="2s" repeatCount="indefinite"/>
+                                </path>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">💪</text>
+                            </svg>
+                        </div>
+                        <h3>Discipline > Motivation</h3>
+                        <p>Motivation is temporary. Discipline is forever. Having to be motivated to work only lasts so long. Being disciplined and working regardless of feelings? That's how empires are built.</p>
+                        <div class="lesson-tag">Truth</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <g transform="translate(50, 50)">
+                                    <circle r="30" fill="none" stroke="var(--primary-red)" stroke-width="2" opacity="0.3"/>
+                                    <circle r="20" fill="none" stroke="var(--primary-red)" stroke-width="2" opacity="0.5"/>
+                                    <circle r="10" fill="none" stroke="var(--primary-red)" stroke-width="2" opacity="0.7"/>
+                                    <circle r="5" fill="var(--primary-red)"/>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🎯</text>
+                            </svg>
+                        </div>
+                        <h3>Find Your Fuel</h3>
+                        <p>12 hours at a computer isn't fun. But I imagine my family having everything they need with no worries. That's my fuel. Find yours - you'll need it on the hard days.</p>
+                        <div class="lesson-tag">Personal</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial & Business Strategy -->
+        <section id="financial" class="lesson-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Financial & Business Strategy</h2>
+                    <p class="section-lead">Money lessons learned the hard way.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <text x="30" y="50" font-size="20" fill="var(--primary-red)">%</text>
+                                <text x="60" y="60" font-size="30" fill="var(--primary-red)">
+                                    <animate attributeName="font-size" values="30;35;30" dur="2s" repeatCount="indefinite"/>$
+                                </text>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">📊</text>
+                            </svg>
+                        </div>
+                        <h3>Margins vs. Volume</h3>
+                        <p>$100K at 50% margins = $50K profit. $200K at 35% margins = $70K profit. Stop obsessing over margins when scaling. Lower margins with higher volume often means more money in your pocket.</p>
+                        <div class="lesson-tag">Math</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <rect x="20" y="40" width="15" height="30" fill="var(--primary-red)" opacity="0.5"/>
+                                <rect x="42" y="30" width="15" height="40" fill="var(--primary-red)" opacity="0.7"/>
+                                <rect x="65" y="20" width="15" height="50" fill="var(--primary-red)">
+                                    <animate attributeName="height" values="50;55;50" dur="2s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">📈</text>
+                            </svg>
+                        </div>
+                        <h3>Scale When It's Working</h3>
+                        <p>My biggest failure? Not capitalizing when things worked. We stayed stagnant instead of taking risks and scaling. Comfort killed us. When something works, pour gas on the fire.</p>
+                        <div class="lesson-tag">Regret</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <circle cx="50" cy="50" r="30" fill="none" stroke="var(--primary-red)" stroke-width="2"/>
+                                <path d="M50,20 L50,50 L70,60" stroke="var(--primary-red)" stroke-width="3" stroke-linecap="round">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="4s" repeatCount="indefinite"/>
+                                </path>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">⏰</text>
+                            </svg>
+                        </div>
+                        <h3>Time Allocation ROI</h3>
+                        <p>If content brings 8/10 clients but takes 20 hours/week, while cold email brings 2/10 clients in 1 hour/week, do more cold email. Always optimize for money output per time input.</p>
+                        <div class="lesson-tag">Efficiency</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder & Team Dynamics -->
+        <section id="founder" class="lesson-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Founder & Team Dynamics</h2>
+                    <p class="section-lead">Hard truths about partnerships and building with others.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <circle cx="35" cy="50" r="15" fill="var(--primary-red)" opacity="0.5"/>
+                                <circle cx="65" cy="50" r="15" fill="var(--primary-red)" opacity="0.5"/>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">🤝</text>
+                            </svg>
+                        </div>
+                        <h3>Founder Friction Is Inevitable</h3>
+                        <p>It will happen. When your co-founder makes a bad decision that loses money, don't break them down. Figure out why it failed together, take the loss together. Be open about what you're doing or it looks like you're slacking.</p>
+                        <div class="lesson-tag">Reality</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <g stroke="var(--primary-red)" stroke-width="2" fill="none">
+                                    <circle cx="50" cy="30" r="10"/>
+                                    <circle cx="30" cy="60" r="10"/>
+                                    <circle cx="70" cy="60" r="10"/>
+                                    <line x1="50" y1="40" x2="30" y2="50" stroke-dasharray="3,3">
+                                        <animate attributeName="stroke-dashoffset" values="0;6" dur="1s" repeatCount="indefinite"/>
+                                    </line>
+                                    <line x1="50" y1="40" x2="70" y2="50" stroke-dasharray="3,3">
+                                        <animate attributeName="stroke-dashoffset" values="0;6" dur="1s" repeatCount="indefinite"/>
+                                    </line>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">👥</text>
+                            </svg>
+                        </div>
+                        <h3>Your Circle Determines Success</h3>
+                        <p>I have 2 types of friends: ones for laughs occasionally, and ones I sit on 14-hour calls with building. We fall asleep on calls and wake up working. The progression from this is unmatched.</p>
+                        <div class="lesson-tag">Growth</div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-icon">
+                            <svg viewBox="0 0 100 100" class="icon-animation">
+                                <path d="M30,70 L50,30 L70,70 Z" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                    <animate attributeName="d" values="M30,70 L50,30 L70,70 Z;M30,70 L50,40 L70,70 Z;M30,70 L50,30 L70,70 Z" dur="2s" repeatCount="indefinite"/>
+                                </path>
+                                <text x="50" y="55" text-anchor="middle" font-size="30">💬</text>
+                            </svg>
+                        </div>
+                        <h3>Have The Hard Conversations</h3>
+                        <p>Avoiding tough talks is the root of failure. They're jarring and annoying but NECESSARY. If something isn't going your way, embrace it and find solutions instead of applying metaphorical painkillers.</p>
+                        <div class="lesson-tag">Critical</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <h2 class="section-title">Why I'm Giving This Away Free</h2>
+                    <div class="story-grid">
+                        <div class="story-text">
+                            <p>Started at 14 with dropshipping. Made 1 sale and thought I'd be rich 😂</p>
+                            <p>Tried Instagram theme pages, hacking video games for coins, lost $5K in crypto at 16, failed at SMMA after grinding 12 hours daily for 3 months...</p>
+                            <p>Finally hit with an influencer marketing agency. Made good money, then a client ran off with $4K. Back to zero.</p>
+                            <p>Found strategies that worked, made money but got complacent and built zero systems. Lost everything again.</p>
+                            <p>September 2024, lost everything again. Rebuilt from scratch to $100K MRR within 6 months, with systems and data. Had Co-founder issues, he stole the companies earnings leaving me at $0.</p>
+                            <p>Currently starting again solo with all my knowledge I've acquired in business over the last 3.5 years, Documenting everything.</p>
+                            <p class="highlight">Every failure taught me something. Now I'm sharing it all because when you win using these methods, you'll remember who helped you get there. And that relationship is worth more than any course fee.</p>
+                        </div>
+                        <div class="story-stats">
+                            <div class="stat-card">
+                                <h3>8+</h3>
+                                <p>Failed Businesses</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>$100K+</h3>
+                                <p>Lost to Mistakes</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>3 Years</h3>
+                                <p>In the Trenches</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>$0</h3>
+                                <p>Cost to Learn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="beginners-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Want The Full System?</h2>
+                    <p>These lessons are just the beginning. Get the complete blueprint that shows you exactly how to implement everything - step by step.</p>
+                    <a href="#newsletter" class="btn btn-primary btn-large">Get The Free Video Blueprint →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title">Transform Your Business Today</h2>
+                    <p class="section-lead">Get instant access to a video that will show you how to automate and streamline your business - saving time, decreasing costs, and increasing revenue.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="text" class="newsletter-input" name="firstName" placeholder="First Name" required>
+                        <input type="text" class="newsletter-input" name="lastName" placeholder="Last Name" required>
+                        <input type="email" class="newsletter-input" name="email" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary">Get Your Free Video</button>
+                    </form>
+                    <p class="newsletter-note">Join thousands who are already transforming their businesses.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">XAK</h4>
+                    <p class="footer-text">Making millionaires, one system at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="beginners.html">Lessons</a></li>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 XAK. Free forever. No catch.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/airtable-integration.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/beginners.js"></script>
+</body>
+</html>

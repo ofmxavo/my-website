@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business tips, tricks, and insights - Blog">
+    <title>Blog - Personal Brand</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global background animations -->
+    <div class="global-bg-animation">
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-star"></div>
+        <div class="bg-star"></div>
+        <div class="bg-star"></div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg viewBox="0 0 200 50" class="logo-main">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--primary-red);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--dark-red);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Icon - Chart/Growth Symbol -->
+                    <g transform="translate(10, 10)">
+                        <!-- Background circle -->
+                        <circle cx="15" cy="15" r="15" fill="url(#logoGrad)"/>
+                        <!-- Chart bars -->
+                        <rect x="8" y="18" width="3" height="7" fill="white" rx="1"/>
+                        <rect x="13" y="14" width="3" height="11" fill="white" rx="1"/>
+                        <rect x="18" y="10" width="3" height="15" fill="white" rx="1"/>
+                        <!-- Growth arrow -->
+                        <path d="M7,12 L22,12 L22,8 L23,8 L20,5 L17,8 L18,8 L18,12" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                    </g>
+                    <!-- Text -->
+                    <text x="50" y="32" font-family="Inter" font-size="32" font-weight="800" fill="var(--black)">XAK</text>
+                    <text x="120" y="32" font-family="Inter" font-size="20" font-weight="400" fill="var(--gray)">.info</text>
+                </svg>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="beginners.html" class="nav-link">Lessons</a></li>
+                <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="index.html#newsletter" class="nav-link nav-cta">Get Free Video</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <h1 class="page-title">Insights & Ideas</h1>
+                <p class="page-subtitle">Expert tips and strategies for building and scaling your business</p>
+                <div class="blog-hero-animation">
+                    <svg viewBox="0 0 500 300" class="blog-hero-svg">
+                        <defs>
+                            <pattern id="blog-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="var(--light-gray)" stroke-width="0.5"/>
+                            </pattern>
+                        </defs>
+                        <rect width="500" height="300" fill="url(#blog-grid)" opacity="0.5"/>
+                        <g transform="translate(250,150)">
+                            <rect x="-60" y="-40" width="120" height="80" rx="10" fill="var(--primary-red)" opacity="0.3">
+                                <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="-40" y="-60" width="80" height="120" rx="10" fill="var(--black)" opacity="0.3">
+                                <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+                            </rect>
+                            <circle r="30" fill="var(--white)" stroke="var(--primary-red)" stroke-width="3"/>
+                            <text y="8" text-anchor="middle" font-size="20" font-weight="bold" fill="var(--primary-red)">i</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-featured">
+            <div class="container">
+                <h2 class="section-title">Featured Article</h2>
+                <article class="featured-article">
+                    <div class="featured-image">
+                        <svg viewBox="0 0 400 300" class="featured-svg">
+                            <rect width="400" height="300" fill="var(--light-gray)"/>
+                            <g transform="translate(200,150)">
+                                <path d="M0,-100 L87,50 L-87,50 Z" fill="var(--primary-red)" opacity="0.3">
+                                    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="4s" repeatCount="indefinite"/>
+                                </path>
+                                <circle r="50" fill="none" stroke="var(--black)" stroke-width="3" stroke-dasharray="10,5">
+                                    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+                                </circle>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="featured-content">
+                        <div class="article-meta">
+                            <span class="category">Strategy</span>
+                            <span class="date">January 15, 2024</span>
+                        </div>
+                        <h3 class="featured-title">The Art of Scaling: From Startup to Success</h3>
+                        <p class="featured-excerpt">Discover the key strategies that successful entrepreneurs use to scale their businesses from zero to hero. Learn about timing, team building, and sustainable growth.</p>
+                        <div class="article-cta">
+                            <a href="article-scaling.html" class="article-link">Read Full Article →</a>
+                            <a href="index.html#newsletter" class="btn btn-primary btn-small">Get More Insights</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-grid">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <rect x="-40" y="-30" width="80" height="60" fill="var(--primary-red)" opacity="0.8" rx="10"/>
+                                    <text y="5" text-anchor="middle" font-size="14" font-weight="bold" fill="white">$1→$5</text>
+                                    <path d="M-60,0 L-40,0 M40,0 L60,0" stroke="var(--black)" stroke-width="2">
+                                        <animate attributeName="stroke-dasharray" values="0,20;20,0" dur="1s" repeatCount="indefinite"/>
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Media Buying</span>
+                                <span class="date">November 15, 2024</span>
+                            </div>
+                            <h3 class="article-title">The $1 to $5 Machine: Why Media Buying is Your ROI Engine</h3>
+                            <p class="article-excerpt">Getting customers is as simple as paying for them. While it's not as cheap as going viral, it's predictable, scalable, and surprisingly simple once you find the right formula.</p>
+                            <a href="article-media-buying-roi-machine.html" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <text y="-20" text-anchor="middle" font-size="24" fill="var(--primary-red)">📈</text>
+                                    <text y="10" text-anchor="middle" font-size="16" font-weight="bold" fill="var(--black)">+300%</text>
+                                    <circle cx="0" cy="0" r="40" fill="none" stroke="var(--primary-red)" stroke-width="2">
+                                        <animate attributeName="r" values="40;50;40" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Content Creation</span>
+                                <span class="date">November 15, 2024</span>
+                            </div>
+                            <h3 class="article-title">The 300% Virality Formula: Why Smart Influencers Outsource Everything But Content</h3>
+                            <p class="article-excerpt">If creators can go viral by recreating trends, why aren't you? Learn the mathematical approach to influencer success and why agencies are your secret weapon.</p>
+                            <a href="article-influencer-virality-formula.html" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <rect x="-30" y="-30" width="60" height="60" fill="var(--black)" rx="5"/>
+                                    <text y="5" text-anchor="middle" font-size="12" font-weight="bold" fill="white">SYSTEM</text>
+                                    <g stroke="var(--primary-red)" stroke-width="2" fill="none">
+                                        <line x1="-30" y1="0" x2="-60" y2="0">
+                                            <animate attributeName="x2" values="-60;-50;-60" dur="2s" repeatCount="indefinite"/>
+                                        </line>
+                                        <line x1="30" y1="0" x2="60" y2="0">
+                                            <animate attributeName="x2" values="60;50;60" dur="2s" repeatCount="indefinite"/>
+                                        </line>
+                                        <line x1="0" y1="-30" x2="0" y2="-60">
+                                            <animate attributeName="y2" values="-60;-50;-60" dur="2s" repeatCount="indefinite"/>
+                                        </line>
+                                        <line x1="0" y1="30" x2="0" y2="60">
+                                            <animate attributeName="y2" values="60;50;60" dur="2s" repeatCount="indefinite"/>
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Systems</span>
+                                <span class="date">November 15, 2024</span>
+                            </div>
+                            <h3 class="article-title">How I Scaled to $100K MRR with 12 Employees and 1 Part-Time Manager</h3>
+                            <p class="article-excerpt">Systems aren't about telling employees what to do. They're about eliminating work entirely. Learn how to build systems that create a sellable, scalable business.</p>
+                            <a href="article-systems-automation-scale.html" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <circle r="40" fill="var(--primary-red)" opacity="0.3">
+                                        <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <rect x="-25" y="-25" width="50" height="50" fill="var(--black)" rx="10">
+                                        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <text y="5" text-anchor="middle" font-size="20" font-weight="bold" fill="white">B</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Finance</span>
+                                <span class="date">January 10, 2024</span>
+                            </div>
+                            <h3 class="article-title">Smart Funding Strategies for Startups</h3>
+                            <p class="article-excerpt">Navigate the complex world of startup funding with our comprehensive guide to raising capital at every stage.</p>
+                            <a href="#" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <circle r="40" fill="var(--primary-red)" opacity="0.3">
+                                        <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <rect x="-25" y="-25" width="50" height="50" fill="var(--black)" rx="10">
+                                        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <text y="5" text-anchor="middle" font-size="20" font-weight="bold" fill="white">B</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Leadership</span>
+                                <span class="date">January 8, 2024</span>
+                            </div>
+                            <h3 class="article-title">Leading Remote Teams Effectively</h3>
+                            <p class="article-excerpt">Master the art of remote leadership with proven strategies for communication, collaboration, and culture building.</p>
+                            <a href="#" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <circle r="40" fill="var(--primary-red)" opacity="0.3">
+                                        <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <rect x="-25" y="-25" width="50" height="50" fill="var(--black)" rx="10">
+                                        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <text y="5" text-anchor="middle" font-size="20" font-weight="bold" fill="white">B</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Product</span>
+                                <span class="date">January 5, 2024</span>
+                            </div>
+                            <h3 class="article-title">From Idea to MVP in 30 Days</h3>
+                            <p class="article-excerpt">A step-by-step guide to rapidly prototyping and launching your minimum viable product to test market fit.</p>
+                            <a href="#" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <circle r="40" fill="var(--primary-red)" opacity="0.3">
+                                        <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <rect x="-25" y="-25" width="50" height="50" fill="var(--black)" rx="10">
+                                        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <text y="5" text-anchor="middle" font-size="20" font-weight="bold" fill="white">B</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Growth</span>
+                                <span class="date">January 3, 2024</span>
+                            </div>
+                            <h3 class="article-title">Growth Hacking on a Budget</h3>
+                            <p class="article-excerpt">Discover creative and cost-effective strategies to accelerate your business growth without breaking the bank.</p>
+                            <a href="#" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <svg viewBox="0 0 300 200" class="article-svg">
+                                <rect width="300" height="200" fill="var(--light-gray)"/>
+                                <g transform="translate(150,100)">
+                                    <circle r="40" fill="var(--primary-red)" opacity="0.3">
+                                        <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <rect x="-25" y="-25" width="50" height="50" fill="var(--black)" rx="10">
+                                        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <text y="5" text-anchor="middle" font-size="20" font-weight="bold" fill="white">B</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Sales</span>
+                                <span class="date">December 28, 2023</span>
+                            </div>
+                            <h3 class="article-title">The Psychology of Closing Deals</h3>
+                            <p class="article-excerpt">Understand the psychological principles behind successful sales and how to apply them in your business.</p>
+                            <a href="#" class="article-link">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">Next →</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="section-title">Never Miss an Update</h2>
+                    <p class="section-lead">Subscribe to our newsletter for the latest insights and strategies delivered to your inbox.</p>
+                    <a href="index.html#newsletter" class="btn btn-primary">Subscribe Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Brand</h4>
+                    <p class="footer-text">Building tomorrow, today.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
